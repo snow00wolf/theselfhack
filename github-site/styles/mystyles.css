@@ -1,0 +1,10 @@
+
+
+@mixin horizontally-center() {
+    position: absolute;
+    bottom: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Self Hack</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 10px;
+      height: 250px;
+      width: 100%;
+      background-image: url('cover.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Increase the font size of the heading
+    .header h1 {
+      color: rgb(242, 240, 211);
+      text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px blue;
+      font-size: 57px;
+      font-family: OCR A Std, monospace;
+    } */
+
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(56, 40, 114);
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: rgb(209, 206, 206);
+      color: rgb(56, 40, 114);
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example and used to make cardone class */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Card for the top left of page, Today's Hack */
+    .cardone {
+      background-color: rgba(170, 170, 170, 0);
+      width: 100%;
+      padding: 20px;
+      background-image: url('stayweird.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cardtwo {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Footer */
+    .footer {
+      text-decoration-color: rgb(170, 127, 9);
+      padding: 20px;
+      text-align: end;
+      background-image: url('new-host-gator-banner.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+
+  </div>
+
+  <div class="navbar">
+    <a href="C:\Users\spren\OneDrive\Desktop\root\index.html">Home</a>
+    <a href="https://theselfhack.wordpress.com/">Blog</a>
+    <a href="https://medium.com/the-self-hack">Medium Publication</a>
+    <a href="#">About</a>
+    <a href="C:\Users\spren\OneDrive\Desktop\root\pages\contact-test.html">Contact</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>Today's Hack</h2>
+      <h5>(add date)</h5>
+      <div class="cardone" style="height:200px;"></div>
+      <p> Here I will add some text about what today's hacks section is about. Either that or i'll add the Hackable
+        Topics section here. Perhaps todays hack will just be a sentence or two, or maybe a link to the newest
+        post/hack, sort of like an exerpt
+      </p>
+      <h3>Programs</h3>
+      <p>To truly be strong, you have to first build the foundation. That foundation consists of three pillars: Mind,
+        Body, and Spirit.</p>
+      <div class="fakeimg" style="height:60px;"><a src="https://anchor.fm/s/534f5c4c/podcast/rss"> Self H@CK RSS</a></div>
+          <br>
+      <div class="fakeimg" style="height:60px;">Body</div><br>
+      <div class="fakeimg" style="height:60px;">Spirit</div>
+    </div>
+    <div class="main">
+      <h2>Self H@CK Podcast</h2>
+      <h5>Episode 1. "How To Actually Make Money In The Stock Market" March 23, 2021</h5>
+      <iframe src="https://anchor.fm/steven-prentice6/embed/episodes/Want-To-Actually-Make-Money-In-The-Stock-Market-etakcj"
+        height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, January 3rd, 2021</h5>
+    <div class="fakeimg">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><a href="partners.hostgator.com/oxV7b" id="">Get Up To 80% Off Your<br>
+        New HostGator Plan!</a></p>
+  </div>
+
+</body>
+
+</html>
